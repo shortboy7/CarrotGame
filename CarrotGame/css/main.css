@@ -1,0 +1,114 @@
+button {
+  cursor: pointer;
+  transition: all 100ms ease-in;
+}
+
+button:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.game {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 800px;
+  height: 500px;
+  background: url("../img/background.png") center/cover;
+}
+
+.game__controller {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 100%;
+  height: 40%;
+  padding-top: 40px;
+}
+
+.play__button {
+  font-size: 30px;
+
+  border: 3px solid black;
+  border-radius: 3px;
+
+  background-color: beige;
+}
+
+.play__button--hidden {
+  opacity: 0;
+  cursor: default;
+}
+
+.timer {
+  width: 100px;
+  margin-top: 10px;
+  text-align: center;
+  background-color: aliceblue;
+  border-radius: 15px;
+  border: 3px solid black;
+
+  font-size: 30px;
+}
+
+.scoreboard {
+  width: 50px;
+  margin-top: 10px;
+  text-align: center;
+  border-radius: 50%;
+  border: 3px solid black;
+  color: white;
+  background-color: orange;
+  font-size: 30px;
+}
+
+.game__playground {
+  padding-top: 10px;
+  position: relative;
+  width: 100%;
+  height: 50%;
+}
+
+.carrot {
+  cursor: pointer;
+  position: absolute;
+  z-index: 1;
+}
+.bug {
+  cursor: pointer;
+  position: absolute;
+  z-index: 1;
+}
+
+.game__result {
+  position: relative;
+  top: 25%;
+  left: 20%;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 40px;
+  width: 60%;
+  height: 50%;
+
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.game__result--hidden {
+  display: none;
+}
+
+.retry__button {
+  border: none;
+  font-size: 30px;
+  color: white;
+
+  background-color: black;
+}
+
+.result__label {
+  padding-top: 10px;
+  font-size: 30px;
+}

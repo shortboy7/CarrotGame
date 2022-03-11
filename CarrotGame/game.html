@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrot Game</title>
+    <script src="https://kit.fontawesome.com/699d5d57a8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/main.css">
+    <script type = "module" src = './src/music.js' defer></script>
+    <script type = "module" src = './src/CustomButton.js' defer></script>
+    <script type = "module" src = './src/field.js' defer></script>
+    <script type = "module" src = './src/gameResult.js' defer></script>
+    <script type = "module" src = './src/gamePlayground.js' defer></script>
+    <script type = "module" src = './src/gameController.js' defer></script>
+    <script type = "module" src = './src/main.js' defer></script>
+</head>
+
+<body>
+    <section class = "game">
+        <header class = "game__controller">
+            <button class = "play__button">
+                <i class="fa-solid fa-play"></i>
+            </button>
+            <span class = "timer">0:01</span>
+            <span class = "scoreboard">9</span>
+        </header>
+        <section class = "game__playground">
+            <section class = "game__result">
+                <button class = "retry__button">
+                    <i class="fa-solid fa-arrow-rotate-right"></i>
+                </button>
+                <span class = "result__label">You win!</span>
+            </section>
+        </section>
+    </section>
+</body>
+</html>
